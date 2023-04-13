@@ -1,0 +1,120 @@
+//ABSTRACTION
+
+
+
+                                                                     ABSTRACTION
+																	 ===========
+- Data abstraction is the process of hiding certain details and showing only essential information to the user.
+- Abstraction can be achieved with either abstract classes or interfaces.
+- Abstraction achievement ==> 100%(When we use Interface)
+- Abstraction achievement ==> (0-100)%(When we use Abstract Classes/Variables/Methods)
+
+#METHOD-1
+=========
+ABSTRACTION BY INTERFACE:-
+--------------------------
+- An interface in Java is a blueprint of a class.
+- The interface in Java used to achieve multiple inheritance & abstraction in java.
+- Relationship between classes and interfaces
+        
+		extends                     implements                     extends
+  CLASS<--------->CLASS   INTERFACE<---------->CLASS   INTERFACE<---------->INTERFACE
+  
+  SYNTAX:-
+  --------
+  interface <interface_name>
+  {  
+    // declare methods that abstract   
+  }  
+ 
+EXAMPLE-1:-
+-----------
+//SIMPLE INTERFACE WITH CLASS
+
+//FILE-A//
+interface printable
+{  
+void print();  
+}  
+
+//FILE-B//
+class A6 implements printable
+{  
+public void print()
+{
+System.out.println("Hello");
+}  
+public static void main(String args[])
+{  
+A6 obj = new A6();  
+obj.print();  
+}  
+}  
+OUTPUT>>
+--------
+Hello
+
+EXAMPLE-2:-
+-----------
+//MULTIPLE CLASSES USING SINGLE INTERFACE
+
+//FILE-A//
+interface Drawable
+{  
+void draw();  
+}  
+
+//FILE-B//
+class Rectangle implements Drawable
+{  
+public void draw()
+{
+System.out.println("drawing rectangle");
+}  
+}  
+
+class Circle implements Drawable
+{  
+public void draw()
+{
+System.out.println("drawing circle");
+}  
+} 
+
+//FILE-C// 
+class Test
+{  
+public static void main(String args[])
+{  
+Drawable d=new Circle();
+d.draw();  
+}
+}  
+  
+EXAMPLE-3:-
+-----------
+//MULTIPLE-INHERITENCE ACHIEVEMENT THROUGH INTERFACE
+
+//FILE-A//
+interface Printable
+{  
+void print();  
+}  
+interface Showable
+{  
+void print();  
+}  
+  
+//FILE-B//
+class Test implements Printable, Showable
+{  
+public void print()
+{
+System.out.println("Hello");
+}  
+public static void main(String args[])
+{  
+Test obj = new Test();  
+obj.print();  
+}  
+}  
