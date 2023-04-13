@@ -3,7 +3,7 @@
 
 
                                                                      ABSTRACTION
-																	 ===========
+					                             ===========
 - Data abstraction is the process of hiding certain details and showing only essential information to the user.
 - Abstraction can be achieved with either abstract classes or interfaces.
 - Abstraction achievement ==> 100%(When we use Interface)
@@ -17,7 +17,7 @@ ABSTRACTION BY INTERFACE:-
 - The interface in Java used to achieve multiple inheritance & abstraction in java.
 - Relationship between classes and interfaces
         
-		extends                     implements                     extends
+	extends                     implements                     extends
   CLASS<--------->CLASS   INTERFACE<---------->CLASS   INTERFACE<---------->INTERFACE
   
   SYNTAX:-
@@ -123,7 +123,7 @@ obj.print();
 =========
 ABSTRACTION BY ABSTRACT CLASSES/VARIABLES/METHODS:-
 ---------------------------------------------------
--A class which is declared with the abstract keyword is known as an abstract class in Java. 
+-A class which is declared with the 'abstract' keyword is known as an abstract class in Java. 
 -It can have abstract and non-abstract methods.
 -It needs to be extended and its method implemented. 
 -It cannot be instantiated.
