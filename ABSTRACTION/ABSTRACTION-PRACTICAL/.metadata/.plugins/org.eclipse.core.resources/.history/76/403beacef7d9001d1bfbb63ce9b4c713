@@ -1,0 +1,6 @@
+package com.java.simpleExampleForAbstractClass;
+
+public interface Bike 
+{
+	abstract void run();  
+}

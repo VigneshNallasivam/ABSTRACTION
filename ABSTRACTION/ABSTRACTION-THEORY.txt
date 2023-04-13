@@ -118,3 +118,38 @@ Test obj = new Test();
 obj.print();  
 }  
 }  
+
+#METHOD-1
+=========
+ABSTRACTION BY ABSTRACT CLASSES/VARIABLES/METHODS:-
+---------------------------------------------------
+-A class which is declared with the abstract keyword is known as an abstract class in Java. 
+-It can have abstract and non-abstract methods.
+-It needs to be extended and its method implemented. 
+-It cannot be instantiated.
+-It can have constructors and static methods also.
+-It can have final methods which will force the subclass not to change the body of the method.
+
+EXAMPLE-1:-
+-----------
+//SIMPLE EXAMPLE FOR ABSTRACT CLASS
+
+//FILE-A//
+abstract class Bike
+{  
+  abstract void run();  
+} 
+
+//FILE-B//
+class Honda4 extends Bike
+{  
+void run()
+{
+System.out.println("running safely");
+}  
+public static void main(String args[])
+{  
+ Bike obj = new Honda4();  
+ obj.run();  
+}  
+}   
